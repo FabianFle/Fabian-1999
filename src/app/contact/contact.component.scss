@@ -1,0 +1,406 @@
+.d-none {
+  display: none !important;
+}
+
+h1 {
+  font-family: "Russo One", sans-serif;
+}
+
+span {
+  font-family: "Russo One", sans-serif;
+}
+
+.contact-div {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  margin-left: 300px;
+}
+
+.img-contact {
+  position: relative;
+  z-index: 4;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    object-fit: cover;
+    width: 400px;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 0px 10px 3px #008cff;
+    }
+  }
+}
+
+.h1-div-contact {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.contact-h1 {
+  font-family: "Russo One", sans-serif;
+  font-size: 80px;
+  color: white;
+  transition: all 125ms ease-in-out;
+  margin: 0;
+  animation: pulseH1 2s ease-in-out infinite;
+
+  &:hover {
+    text-shadow: 0 0 10px #008cff, 0 0 20px #008cff;
+  }
+}
+
+@keyframes pulseH1 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+form {
+  position: relative;
+  z-index: 2;
+}
+
+.green-line-social {
+  height: 4px;
+  width: 100px;
+  background-color: #008cff;
+
+  &:first-child {
+    margin-right: 20px;
+  }
+
+  &:last-child {
+    margin-left: 20px;
+  }
+}
+
+.input-textarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  input {
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 10px 3px #008cff;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+  }
+
+  textarea {
+    width: 400px;
+    height: 150px;
+    border-radius: 10px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 10px 3px #008cff;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+  }
+}
+
+.contact-shadow {
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+
+.contact-shadow1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.contact-Btn {
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  font-family: "Russo One", sans-serif;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  transition: all 125ms ease-in-out;
+  background-color: blue;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: #008cff;
+    box-shadow: 0px 0px 10px 3px #008cff;
+  }
+}
+
+.img-contact-line {
+  height: 4px;
+  width: 100px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.sendEmail {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.btn-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loaderDNone {
+  display: none;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.line {
+  height: 100%;
+  width: 4px;
+  margin-right: 2px;
+  animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.line1 {
+  animation-delay: -0.16s;
+  background-color: blue;
+}
+
+.line2 {
+  animation-delay: -0.32s;
+  background-color: #008cff;
+}
+
+.line3 {
+  animation-delay: -0.48s;
+  background-color: blue;
+}
+
+.line4 {
+  animation-delay: -0.64s;
+  background-color: #008cff;
+}
+
+.line5 {
+  animation-delay: -0.8s;
+  background-color: blue;
+}
+
+.locatContactDiv {
+  position: relative;
+  z-index: 2;
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.locatContact {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.locatContactInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    margin: 5px;
+  }
+
+  h2 {
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    transition: all 125ms ease-in-out;
+    animation: pulseH1 2s ease-in-out infinite;
+
+    &:hover {
+      text-shadow: 0 0 10px #008cff, 0 0 20px #008cff;
+    }
+  }
+
+  span {
+    font-size: 30px;
+    color: white;
+  }
+}
+
+.germanCardDiv {
+  position: relative;
+  z-index: 2;
+
+  img {
+    object-fit: cover;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.contact-shadow2 {
+  position: absolute;
+  top: -200px;
+  left: 0;
+}
+
+@keyframes loader {
+  0% {
+    transform: scaleY(0.1);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+
+  100% {
+    transform: scaleY(0.1);
+  }
+}
+
+@media (max-width: 1400px) {
+  .contact-div {
+    margin-left: 20px;
+  }
+
+  .mobile-line {
+    display: none;
+  }
+}
+
+@media (max-width: 1060px) {
+  .contact-div {
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
+
+  .green-line-social {
+    display: none;
+  }
+
+  .img-contact-line {
+    display: none;
+  }
+
+  .img-contact {
+    img {
+      border-radius: 20px;
+      border-right: 2px solid white;
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .locatContactDiv {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 570px) {
+  .contact-shadow {
+    img {
+      object-fit: contain;
+      width: 95%;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .input-textarea {
+    input {
+      width: 250px;
+    }
+
+    textarea {
+      width: 250px;
+    }
+  }
+
+  .germanCardDiv {
+    img {
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .locatContactInfo {
+    a {
+      text-align: center;
+    }
+  }
+
+  .contact-shadow2 {
+    img {
+      object-fit: cover;
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .contact-h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 300px) {
+  .img-contact {
+    img {
+      width: 260px;
+    }
+  }
+}
